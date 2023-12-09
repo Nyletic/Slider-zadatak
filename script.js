@@ -1,14 +1,11 @@
 jQuery(function ($) {
-  const animationDuration = 400;
+  const animationDuration = 300;
 
   $("#prev").on("click", function () {
     $(".carousels .images img:first-child").fadeOut(
       animationDuration,
       function () {
-        $(this)
-          .appendTo($(this).parent())
-          .fadeIn(animationDuration)
-          .animate(animationDuration);
+        $(this).appendTo($(this).parent()).fadeIn(animationDuration);
       }
     );
   });
@@ -22,12 +19,3 @@ jQuery(function ($) {
     );
   });
 });
-
-// $("#next").on("click", function () {
-//   $(".carousel .images img:last-child").hide("normal", function () {
-//     $(this)
-//       .prependTo($(this).parent())
-//       .show("normal")
-//       .css({ marginLeft: "5px" });
-//   });
-// });
