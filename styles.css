@@ -6,7 +6,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 100;
+  font-weight: 50;
   word-spacing: 1.5;
   line-height: 22.5px;
 }
@@ -70,9 +70,8 @@ h3 {
   align-items: flex-start;
   gap: 30px;
   max-width: 350px;
-  max-height: 50vh;
 }
 
 .transition {
-  transition: 0.7s;
+  transition: 0.4s;
 }
